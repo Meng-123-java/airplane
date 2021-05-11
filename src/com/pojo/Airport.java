@@ -1,21 +1,9 @@
 package com.pojo;
 
 public class Airport {
-
 	private int id;
 	private String portName;
 	private String cityName;
-	
-	public Airport() {
-		super();
-	}
-	
-	public Airport(int id, String portName, String cityName) {
-		super();
-		this.id = id;
-		this.portName = portName;
-		this.cityName = cityName;
-	}
 	public int getId() {
 		return id;
 	}
@@ -34,10 +22,4 @@ public class Airport {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-
-	@Override
-	public String toString() {
-		return "Airport [id=" + id + ", portName=" + portName + ", cityName=" + cityName + "]";
-	}
-	
 }

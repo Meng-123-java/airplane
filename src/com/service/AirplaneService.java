@@ -5,5 +5,5 @@ import java.util.List;
 import com.pojo.Airplane;
 
 public interface AirplaneService {
-	List<Airplane> show(int takeid, int landid);
+	List<Airplane> show(int takeid,int landid, int mairnoid, int mairleaderid);
 }

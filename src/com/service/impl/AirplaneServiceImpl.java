@@ -7,11 +7,11 @@ import com.pojo.Airplane;
 import com.service.AirplaneService;
 import com.util.MyBatisUtil;
 
-public class AirplaneServiceImpl implements AirplaneService{
+public class AirplaneServiceImpl implements AirplaneService {
 
 	@Override
-	public List<Airplane> show(int takeid, int landid) {
-		return MyBatisUtil.getSession().getMapper(AirplaneMapper.class).selByTakeidLandid(takeid, landid);
+	public List<Airplane> show(int takeid,int landid, int mairnoid, int mairleaderid) {
+		return MyBatisUtil.getSession().getMapper(AirplaneMapper.class).selByTakeidLandid(takeid, landid, mairnoid, mairleaderid);
 	}
 
 }

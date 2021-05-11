@@ -15,16 +15,14 @@ public class AirportServiceImpl implements AirportService{
 	public List<Airport> showTakePort() {
 		SqlSession session = MyBatisUtil.getSession();
 		AirportMapper airportMapper = session.getMapper(AirportMapper.class);
-		List<Airport> selTakePort = airportMapper.selTakePort();
-		return selTakePort;
+		return airportMapper.selTakePort();
 	}
 
 	@Override
 	public List<Airport> showLandPort() {
 		SqlSession session = MyBatisUtil.getSession();
 		AirportMapper airportMapper = session.getMapper(AirportMapper.class);
-		List<Airport> selLandPort = airportMapper.selLandPort();
-		return selLandPort;
+		return airportMapper.selLandPort();
 	}
 
 }

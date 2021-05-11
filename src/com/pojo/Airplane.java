@@ -1,28 +1,21 @@
 package com.pojo;
 
 public class Airplane {
-
 	private int id;
 	private String airNo;
 	private int time;
 	private double price;
-	private Airport takeport;
-	private Airport landport;
+	private Airport takePort;
+	private Airport landPort;
+	private Mairno mairno;
+	private Mairleader leader;
 	
-	public Airplane() {
-		super();
+	public Mairno getMairno() {
+		return mairno;
 	}
-	
-	public Airplane(int id, String airNo, int time, double price, Airport takeport, Airport landport) {
-		super();
-		this.id = id;
-		this.airNo = airNo;
-		this.time = time;
-		this.price = price;
-		this.takeport = takeport;
-		this.landport = landport;
+	public void setMairno(Mairno mairno) {
+		this.mairno = mairno;
 	}
-
 	public int getId() {
 		return id;
 	}
@@ -47,23 +40,16 @@ public class Airplane {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public Airport getTakeport() {
-		return takeport;
+	public Airport getTakePort() {
+		return takePort;
 	}
-	public void setTakeport(Airport takeport) {
-		this.takeport = takeport;
+	public void setTakePort(Airport takePort) {
+		this.takePort = takePort;
 	}
-	public Airport getLandport() {
-		return landport;
+	public Airport getLandPort() {
+		return landPort;
 	}
-	public void setLandport(Airport landport) {
-		this.landport = landport;
+	public void setLandPort(Airport landPort) {
+		this.landPort = landPort;
 	}
-
-	@Override
-	public String toString() {
-		return "AirPlane [id=" + id + ", airNo=" + airNo + ", time=" + time + ", price=" + price + ", takeport="
-				+ takeport + ", landport=" + landport + "]";
-	}
-	
 }
