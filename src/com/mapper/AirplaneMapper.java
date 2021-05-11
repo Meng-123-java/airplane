@@ -7,7 +7,5 @@ import org.apache.ibatis.annotations.Param;
 import com.pojo.Airplane;
 
 public interface AirplaneMapper {
-
-	List<Airplane> selByTakeidLandid(@Param("takeid")int takeid, @Param("landid")int landid);
-	
+	List<Airplane> selByTakeidLandid(@Param("takeid")int takeid,@Param("landid")int landid, @Param("mairnoid")int mairnoid, @Param("mairleaderid")int mairleaderid);
 }
